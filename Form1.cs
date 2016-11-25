@@ -19,10 +19,10 @@ namespace DeulCalculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            player1life.Text = "8000";
+            player2life.Text = "8000";
         }
 
-        int initLife = 8000;
         int temp = 0;
 
         public void addNum(int num)
@@ -100,48 +100,61 @@ namespace DeulCalculator
 
         private void player1minus_Click(object sender, EventArgs e)
         {
-            temp = Convert.ToInt32(lifeChange.Text);
-            lifeChange.Text = "";
-            int tempLife = Convert.ToInt32(player1life.Text);
-            if (tempLife - temp < 0)
-            {
-                player1life.Text = "0";
+            if (lifeChange.Text != "") {
+                temp = Convert.ToInt32(lifeChange.Text);
+                lifeChange.Text = "";
+                int tempLife = Convert.ToInt32(player1life.Text);
+                if (tempLife - temp < 0)
+                {
+                    player1life.Text = "0";
+                }
+                else
+                {
+                    player1life.Text = (tempLife - temp).ToString();
+                }
             }
-            else {
-                player1life.Text = (tempLife-temp).ToString();
-            }
+           
             
         }
 
         private void player1plus_Click(object sender, EventArgs e)
         {
-            temp = Convert.ToInt32(lifeChange.Text);
-            lifeChange.Text = "";
-            int tempLife = Convert.ToInt32(player1life.Text);
-            player1life.Text = (tempLife + temp).ToString();
+            if (lifeChange.Text != "") {
+                temp = Convert.ToInt32(lifeChange.Text);
+                lifeChange.Text = "";
+                int tempLife = Convert.ToInt32(player1life.Text);
+                player1life.Text = (tempLife + temp).ToString();
+            }
+            
         }
 
         private void player2minus_Click(object sender, EventArgs e)
         {
-            temp = Convert.ToInt32(lifeChange.Text);
-            lifeChange.Text = "";
-            int tempLife = Convert.ToInt32(player2life.Text);
-            if (tempLife - temp < 0)
-            {
-                player2life.Text = "0";
+            if (lifeChange.Text != "") {
+                temp = Convert.ToInt32(lifeChange.Text);
+                lifeChange.Text = "";
+                int tempLife = Convert.ToInt32(player2life.Text);
+                if (tempLife - temp < 0)
+                {
+                    player2life.Text = "0";
+                }
+                else
+                {
+                    player2life.Text = (tempLife - temp).ToString();
+                }
             }
-            else
-            {
-                player2life.Text = (tempLife - temp).ToString();
-            }
+            
         }
 
         private void player2plus_Click(object sender, EventArgs e)
         {
-            temp = Convert.ToInt32(lifeChange.Text);
-            lifeChange.Text = "";
-            int tempLife = Convert.ToInt32(player2life.Text);
-            player2life.Text = (tempLife + temp).ToString();
+            if (lifeChange.Text != "") {
+                temp = Convert.ToInt32(lifeChange.Text);
+                lifeChange.Text = "";
+                int tempLife = Convert.ToInt32(player2life.Text);
+                player2life.Text = (tempLife + temp).ToString();
+            }
+            
         }
 
         private void reset_Click(object sender, EventArgs e)
@@ -159,27 +172,39 @@ namespace DeulCalculator
         private void player1half_Click(object sender, EventArgs e)
         {
             int tempLife = Convert.ToInt32(player1life.Text);
-            player1life.Text = (tempLife / 2).ToString();
+            if (tempLife != 1) {
+                player1life.Text = (tempLife / 2).ToString();
+            }
+            
         }
 
         private void player2half_Click(object sender, EventArgs e)
         {
             int tempLife = Convert.ToInt32(player2life.Text);
-            player2life.Text = (tempLife / 2).ToString();
+            if (tempLife != 1)
+            {
+                player2life.Text = (tempLife / 2).ToString();
+            }
         }
 
         private void player1change_Click(object sender, EventArgs e)
         {
-            temp = Convert.ToInt32(lifeChange.Text);
-            lifeChange.Text = "";
-            player1life.Text = temp.ToString();
+            if (lifeChange.Text != "") {
+                temp = Convert.ToInt32(lifeChange.Text);
+                lifeChange.Text = "";
+                player1life.Text = temp.ToString();
+            }
+            
         }
 
         private void player2change_Click(object sender, EventArgs e)
         {
-            temp = Convert.ToInt32(lifeChange.Text);
-            lifeChange.Text = "";
-            player2life.Text = temp.ToString();
+            if (lifeChange.Text != "")
+            {
+                temp = Convert.ToInt32(lifeChange.Text);
+                lifeChange.Text = "";
+                player2life.Text = temp.ToString();
+            }
         }
 
         private void rollDice_Click(object sender, EventArgs e)
