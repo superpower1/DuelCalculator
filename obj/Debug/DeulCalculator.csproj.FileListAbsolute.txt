@@ -1,0 +1,9 @@
+c:\users\user\documents\visual studio 2015\Projects\DeulCalculator\DeulCalculator\bin\Debug\DeulCalculator.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\bin\Debug\DeulCalculator.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\bin\Debug\DeulCalculator.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\obj\Debug\DeulCalculator.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\obj\Debug\DeulCalculator.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\obj\Debug\DeulCalculator.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\obj\Debug\DeulCalculator.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\obj\Debug\DeulCalculator.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\DeulCalculator\DeulCalculator\obj\Debug\DeulCalculator.calculator.resources
